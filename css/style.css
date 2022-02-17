@@ -1,0 +1,276 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER STYLING */
+
+/* Header Piecing */
+
+header {
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+nav ul {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+
+nav form input {
+  width: 100%;
+}
+
+/* Header Placing  */
+
+nav > img {
+  width: auto;
+  margin-left: 10%;
+  padding-top: 5px;
+  border-right: 0.2px solid white;
+}
+
+nav ul li,
+nav img + a {
+  padding: 14px 30px;
+  border-right: 1px solid white;
+  height: 40px;
+}
+
+nav form {
+  padding-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a img {
+  width: 20%;
+  padding-right: 5px;
+}
+
+nav ul li {
+  text-align: center;
+  width: auto;
+}
+
+/* Main Styling */
+
+main {
+  margin: 0 10%;
+  clear: both;
+}
+
+main > section {
+  width: 50%;
+  height: 350px;
+  float: left;
+}
+
+main h2 + section img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  color: white;
+  padding-right: 10px;
+}
+
+.text-on-image {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.text-on-image h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.text-on-image p {
+  margin: 10px 0;
+  color: #d3d3d3;
+}
+
+main > h2 {
+  margin-top: 3%;
+  color: #4a4a4a;
+  font-size: 22px;
+}
+
+main > h2 span {
+  float: right;
+  color: #8c8c8c;
+  font-weight: normal;
+}
+
+section span {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+main > section div span strong {
+  color: red;
+  font-size: smaller;
+  font-weight: 900;
+}
+
+
+/* Main Second Section Styling */
+
+main section + section section {
+  width: 50%;
+  height: 175px;
+  float: left;
+}
+
+.small-container {
+  position: relative;
+  color: white;
+}
+
+.text-over-image {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+}
+
+main section + section section img {
+  width: 100%;
+  height: 100%;
+}
+
+main section + section section div h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.bottom-border {
+  border-bottom: 5px solid transparent;
+}
+
+.top-border {
+  border-top: 5px solid transparent;
+}
+
+.right-border {
+  border-right: 5px solid transparent;
+}
+
+.left-border {
+  border-left: 5px solid transparent;
+}
+
+.right-border span strong {
+  color: aqua;
+}
+
+.left-border span strong {
+  color: #4a4a4a;
+}
+
+.text-over-image span strong {
+  margin-right: 5px;
+}
+
+main section + section section + section.bottom-border span strong {
+  color: red;
+}
+
+/* Section Styling */
+
+main + section > section {
+  float: left;
+  width: 33.33%;
+  /* height: 300px; */
+}
+
+main + section h2 {
+  float: left;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+main + section h2 + section {
+  clear: both;
+}
+
+main + section {
+  margin: 0 10%;
+  clear: both;
+}
+
+main + section section img {
+  width: 100%;
+}
+
+main + section section {
+  padding-right: 20px;
+}
+
+main + section section h3 {
+  color: #212121;
+  font-size: 20px;
+}
+
+main + section section p {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 19.2px;
+}
+
+main + section strong {
+  margin-right: 10px;
+  color: red;
+  font-weight: 900;
+}
+
+main + section section span {
+  color: #767676;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
